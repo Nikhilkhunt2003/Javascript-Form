@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="header">
+            <h2>Submit Your Details</h2>
+        </div>
+        <div class="user-input">
+            <h3 class="mart-b"></h3>
+            <div class="name-section">
+                <div class="fname-field">
+                    <h3>First Name</h3>
+                    <input class="inp-sty" type="text" name="fname" id="fname" value="">
+                    <p id="errmessagefname" class="errmsg"></p>
+                </div>
+                <div class="mname-field">
+                    <h3>Middle Name</h3>
+                    <input class="inp-sty" type="text" name="mname" id="mname" value="">
+                    <p id="errmessagemname" class="errmsg"></p>
+                </div>
+                <div class="lname-field">
+                    <h3>Last Name</h3>
+                    <input class="inp-sty" type="text" name="lname" id="lname" value="">
+
+                    <p id="errmessagelname" class="errmsg"></p>
+                </div>
+            </div>
+            <h3 class="mart-20-b">Enter Mobile No.</h3>
+            <div class="mobile-section">
+                <input class="inp-sty-100per" type="tel" name="mobno" id="mobno" value="">
+                <p id="errmessagemobile" class="errmsg"></p>
+            </div>
+            <h3 class="mart-20-b">Enter Email</h3>
+            <div class="email-section">
+                <input class="inp-sty-100per" type="email" name="emailid" id="emailid" value="">
+                <p id="errmessageemail" class="errmsg"></p>
+            </div>
+            <h3 class="mart-20-b">Enter Address</h3>
+            <div class="address-section">
+                <textarea class="inp-sty-100per-nohei" name="address" id="address" rows="2" value=""></textarea>
+                <p id="errmessageaddress" class="errmsg"></p>
+                <div class="add-undrsec">
+                    <div class="add-select marbtm-10px">
+                        <select name="city" id="city">
+                            <option value="select">Select City</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Ahemdabad">Ahemdabad</option>
+                        </select>
+                        <select name="state" id="state">
+                            <option value="select">Select State</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Maharastra">Maharastra</option>
+                        </select>
+                    </div>
+                    <div class="add-select">
+                        <select name="country" id="country">
+                            <option value="select">Select Country</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Australlia">Australlia</option>
+                            <option value="Canada">Canada</option>
+                        </select>
+                        <input type="number" name="pincode" id="pincode" placeholder="Enter Pincode">
+                    </div>
+                </div>
+            </div>
+            <h3 class="mart-20-b">Select Gender</h3>
+            <div class="radiobtn">
+                <div><input type="radio" class="male" name="gender" value="Male"> Male</div>
+                <div><input type="radio" class="female" name="gender" value="Female"> Female</div>
+                <div><input type="radio" class="other" name="gender" value="Other"> Other</div>
+            </div>
+            <p id="errmessagegender" class="errmsg"></p>
+            <h3 class="mart-20-b">Hobbies</h3>
+            <div class="hobbies add-undrsec" id="myDiv">
+                <div>
+                    <input type="checkbox" id="none" name="hobbies" value="none" onchange="Reassign()" />
+                    <label> None</label> <button class="add-hobbi-btn" onclick="addhobby()" id="newhbbtn">Add Extra
+                        Hobbies</button>
+                </div>
+                <div>
+                    <input type="checkbox" id="coding" name="hobbies" value="coding" />
+                    <label> Coding</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="music" name="hobbies" value="music" />
+                    <label> Music</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="dancing" name="hobbies" value="dancing" />
+                    <label> Dancing</label>
+                </div>
+            </div>
+            <p id="errmesghobby" class="errmsg"></p>
+            <h3 class="mart-20-b">Education</h3>
+            <table id="myTable" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <select name="selectOption" class="eductn">
+                                <option value="">Select Education</option>
+                                <option value="h.s.c">H.S.C</option>
+                                <option value="s.s.c">S.S.C</option>
+                                <option value="grajuate">Grajuate</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="inp-sty" name="textInput1" placeholder="2024"
+                                title="Enter Only Four Digit Year, Ex:- 2002">
+                        </td>
+                        <td><input type="text" class="inp-sty" name="textInput2" placeholder="88.25"
+                                title="Enter Only Four Digit Number With Point, Ex:- 80.00, 41.56">
+                        </td>
+                        <td><button class="add-edu-btn" type="button" onclick="addRow()">Add Education</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="erratedu">
+                <p id="errmessageedu" class="errmsg"></p>
+                <p id="errmessageyear" class="errmsg"></p>
+                <p id="errmessageper" class="errmsg"></p>
+            </div>
+            <h3 class="mart-20-b">Enter Password</h3>
+            <div class="password-section">
+                <input class="inp-sty-100per" type="password" name="pass" id="pass">
+                <p id="errmessagepass" class="errmsg"></p>
+            </div>
+            <h3 class="mart-20-b">Enter Confirm Password</h3>
+            <div class="confpassword-section">
+                <input class="inp-sty-100per" type="password" name="conpass" id="conpass">
+                <p id="errmessageconpass" class="errmsg"></p>
+            </div>
+            <div class="bottom-btn">
+                <button class="final-btn-submit" onclick="validateForm()">Submit Information</button>
+                <button class="final-btn-reset" onclick="location.reload()">Reset Form</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p id="ansname"></p>
+    </div>
+    <div id="printedudata">
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

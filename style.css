@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h3 {
+    font-weight: 300;
+}
+
+.maindiv {
+    margin: 30px auto;
+    height: auto;
+    width: 40%;
+    background-color: aquamarine;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(151, 151, 255);
+    padding: 30px;
+    text-align: center;
+}
+
+.user-input {
+    width: 100%;
+    padding: 20px;
+}
+
+.name-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.mart-b {
+    margin: 10px 0;
+
+}
+
+.mart-20-b {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.mar-t {
+    margin-top: 5px;
+}
+
+.inp-sty {
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+}
+
+
+.inp-sty-100per {
+
+    width: 100%;
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+}
+
+.inp-sty-100per-nohei {
+
+    width: 100%;
+
+    outline: none;
+    font-size: 15px;
+}
+
+.add-undrsec {
+    width: 100%;
+
+
+}
+
+.add-select>select {
+    width: 45%;
+    height: 30px;
+}
+
+.add-select>input {
+    width: 45%;
+    height: 30px;
+}
+
+.add-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.marbtm-10px {
+    margin: 15px 0;
+}
+
+.radiobtn {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.add-hobbi-btn {
+    margin-left: 20%;
+}
+
+
+.eductn {
+    height: 30px;
+}
+
+
+.add-edu-btn {
+    height: 30px;
+}
+
+.bottom-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.erratedu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 190px;
+}
+
+.final-btn-submit {
+    margin-top: 20px;
+    width: 45%;
+    height: 50px;
+    background-color: rgb(151, 151, 255);
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.final-btn-reset {
+    margin-top: 20px;
+    width: 45%;
+    height: 50px;
+    background-color: rgb(255, 117, 117);
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.errmsg {
+    color: red;
+    font-size: 15px;
+
+}
+
+
+@media screen and (max-width: 1776px) {
+    .name-section {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .inp-sty {
+        width: 100%;
+        margin-bottom: 20;
+    }
+
+    .edu {
+
+        flex-direction: column
+    }
+
+    .edu>select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .inp-sty {
+        width: 100%;
+    }
+
+    .add-ed-bttn {
+        margin: 0 auto;
+    }
+
+    .passing-year {
+        margin-bottom: 10px;
+    }
+
+    .persentage {
+        margin-bottom: 10px;
+    }
+
+    .mname-field {
+        margin-bottom: 10px;
+    }
+
+    .radiobtn {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .maindiv {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .maindiv {
+        margin: 0;
+        width: 100%;
+    }
+}
